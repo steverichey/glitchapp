@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Glitchapp" package="com.example.glitchapp" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="Glitchapp" />
+	
+	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
+
+	<window if="web" orientation="portrait"  />
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
+	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
+	
+	<set name="SWF_VERSION" value="11.8" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="systools" />
+	
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<icon path="Assets/openfl.svg" />
+	
+	<template path="Template"/>
+</project>
